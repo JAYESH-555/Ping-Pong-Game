@@ -1,0 +1,91 @@
+html{
+    box-sizing: border-box;
+}
+
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+
+body{
+    background-color: #4682B4;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    color: #FFFFFF;
+}
+
+header{
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+#ping-pong-table{
+    margin-top: 100px;
+    border: 2px, solid black;
+    width: 700px;
+    height: 400px;
+    background-color: #4CAF50;
+    position: relative;
+    display: flex;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    
+}
+
+#paddle{
+    background-color: red;
+    border: 2px solid black;
+    width: 20px;
+    height: 75px;
+    margin-left: 2px;
+    position: absolute;
+}
+
+#paddle2 {
+    background-color: #00FFFF;
+    border: 2px solid black;
+    width: 20px; 
+    height: 75px; 
+    position: absolute;
+    /* top: calc(50% - 50px); Center vertically */
+    right: 2px; /* Position near the right edge */
+}
+
+#ball{
+    background-color: yellow;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+#instructions {
+    margin-top: 20px;
+    color: #FFFFFF;
+    font-size: 20px;
+    text-align: center;
+}
+
+
+#scoreboard {
+    position: absolute;
+    top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    z-index: 1;
+}
+
+#left-score, #right-score {
+    padding: 0 20px;
+}
